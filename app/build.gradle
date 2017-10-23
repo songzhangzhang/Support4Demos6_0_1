@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.android.supportv4"
-        minSdkVersion 4
+        minSdkVersion 14
         targetSdkVersion 22
     }
 
@@ -16,4 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+String support_lib_version = "26.0.0-alpha1"
+
+dependencies {
+    compile "com.android.support:support-v4:${support_lib_version}"
 }
